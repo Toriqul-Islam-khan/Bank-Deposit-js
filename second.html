@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- UI for Diposite,Withdraw and Balance -->
+    <header>
+        <h1 class="text-6xl text-center m-9">Your Account</h1>
+    </header>
+    <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 text-center text-white w-9/12 mx-auto">
+            <div class="text-3xl bg-cyan-700 rounded-lg py-auto p-6">
+                <h1>Deposit</h1>
+                <h2>$<span id="totalDeposit">00</span></h2>
+            </div>
+            <div class="text-3xl bg-orange-700 rounded-lg py-auto p-6">
+                <h1>Withdraw</h1>
+                <h2>$<span id="totalWithdraw">00</span></h2>
+            </div>
+            <div class="text-3xl bg-purple-700 rounded-lg py-auto p-6">
+                <h1>Balance</h1>
+                <h2>$<span id="totalBalance">00</span></h2>
+            </div>
+        </div>
+    </section>
+    <!-- Diposit and Withdraw UI -->
+    <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+            <div class="bg-sky-700 h-48 p-8 rounded-xl">
+                <h1 class="text-2xl text-white">Please Deposit</h1>
+                <input type="text" name="" id="deposit-field" placeholder="$ amount you want to deposit"
+                    class="block w-72 text-md my-4 mx-auto rounded-md p-1">
+                <button class="mx-20 text-xl text-white bg-amber-400 p-2 rounded-2xl w-28 hover:bg-rose-700"
+                    id="deposit-btn"title="Please Click">Deposit</button>
+            </div>
+            <div class="bg-emerald-700 h-48 p-8 rounded-xl">
+                <h1 class="text-2xl text-white">Please Withdraw</h1>
+                <input type="text" name="" id="withdraw-field" placeholder="$ amount you want to withdraw"
+                    class="block w-72 text-md my-4 mx-auto rounded-md p-1">
+                <button class="mx-20 text-xl text-white bg-amber-400 p-2 rounded-2xl w-28 hover:bg-rose-700"
+                    id="withdraw-btn">Withdraw</button>
+            </div>
+        </div>
+    </section>
+
+
+<!-- my JS -->
+    <script src="second.js"></script>
+</body>
+
+</html>
